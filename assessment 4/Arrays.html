@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>Arrays</title>
+    </head>
+    <body>
+        <h1><u>3)Arrays</u></h1></br>
+        <p><h1>i)Find the Product.</h1></br>Write a program that takes an array as input from the user and find out the product of the elements.</br><b>Note</b>: You have to complete <b>Find_Prod</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The input contains a single number N, followed by N numbers as array elements.</p>
+        <p><h1>Output Format</h1></br>Return the required answer.</p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 20</br>1 ≤ ElementoftheArray ≤ 100</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>5</br>1 2 3 4 5</br>Sample Output</br>120</p>
+        <p>CODE</p>
+        <p>const Find_Prod = (array,N) =></br>{</br>let ans=1;</br>for(index=0;index<N;index++){</br>ans=ans*array[index];</br>}</br>return ans;};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>5</br>1 2 3 4 5</br>Output</br>120</p><hr>
+
+        <p><h1>ii)Find the Sum.</h1></br>Write a program which takes an array as input from the user and find out the sum of the array elements.</br><b>Note</b>: You have to complete <b>Find_Sum</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The input contains a single number N, followed by N numbers as array elements.</p>
+        <p><h1>Output Format</h1></br>Return the required answer.</p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 100</br>1 ≤ ElementoftheArray ≤ 100</br>Note: You have to complete Find_Sum function. No need to take any input.</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>5</br>1 2 3 4 5</br>Sample Output</br>15</p>
+        <p>CODE</p>
+        <p>const Find_Sum = (array,N) => {</br>let ans=0;</br>for(index=0;index<N;index++){</br>ans=ans+array[index];</br>}</br>return ans;};};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>5</br>1 2 3 4 5</br>Output</br>15</p><hr>
+
+        <p><h1>iii)Count Occurrences</h1></br>You are given an array A containing N integer elements and an integer K, and your task is to return the count of occurrences of K in array A.</br><b>Note</b>: You have to complete <b>findCount function</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The first line of the input contains two space-separated integers N and K, denoting the number of elements in the array A and the element whose count needs to be determined, respectively.The second line of the input contains N space-separated integers, denoting the elements of the array A.</p>
+        <p><h1>Output Format</h1></br>Return the count of occurrences of K in array A.</p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 100</br>1 ≤ K ≤ 100</br>1 ≤ Ai ≤ 100</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>4 3</br>3 3 1 2</br>Sample Output</br>2</p>
+        <p>CODE</p>
+        <p>const findCount = (N,K,Arr) => {</br>let ans=0;</br>for(i=0;i<N;i++){</br>if(K===Arr[i]){</br>ans++;</br>}</br>}</br>return ans;};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>4 3</br>3 3 1 2</br>Output</br>2</p><hr>
+
+        <p><h1>iv)Even Odd</h1></br>You are given an array A containing N integer elements, and your task is to return an array B (having a size equal to 2), where B[0] contains the sum of all even elements of array A and B[1] has the sum of all odd elements of the array A.</br><b>Note</b>: You have to complete <b>findEvenOdd function</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The first line of the input contains an integer N, denoting the number of elements in the array A.The second line of the input contains N space-separated integers, denoting the elements of array A.</p>
+        <p><h1>Output Format</h1></br>Return array B as output.</p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 100</br>0 ≤ Ai ≤ 100</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>7</br>1 2 3 4 5 6 7</br>Sample Output</br>12 16</p>
+        <p>CODE</p>
+        <p>const findEvenOdd = (N,Arr) => {</br>let sumeven=0,sumodd=0;</br>for(i=0;i<N;i++){</br>if(Arr[i]%2===0){</br>sumeven+=Arr[i];</br>}</br>else{</br>sumodd+=Arr[i];</br>}</br>}let B=[sumeven,sumodd];</br>return B;};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>7</br>1 2 3 4 5 6 7</br>Output</br>12 16</p><hr>
+
+        <p><h1>v)Find whether the number is present or not</h1></br>Write a program which takes an array as input from the user and a number.</br>Check whether the number is present or not.</br><b>Note</b>: You have to complete <b>Find_Num</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The first line contains an integer N, denoting the size of the array.The second line contains N space-separated integers, denoting the elements of the array.The third line contains an integer M, denoting the element that needs to be searched.</p>
+        <p><h1>Output Format</h1></br>Return the "YES" (without quotes) else return "NO" (without quotes).</p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 100</br>1 ≤ ElementoftheArray ≤ 1000</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>5</br>1 2 3 4 5</br>2</br>Sample Output</br>YES</p>
+        <p>CODE</p>
+        <p>const Find_Num = (array,N,M) => {</br>for(i=0;i<=N;i++){</br>if(M===array[i]){</br>return "YES";</br>}</br>}</br>return "NO";</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>5</br>1 2 3 4 5</br>2</br>Output</br>YES</p><hr>
+
+        <p><h1>vi)Higher Age</h1></br>You are given an array A containing the age of persons in your locality, and your task is to find and return an array containing the age of persons that are over 18(18 included).<b>Note</b>: Also, in the output array, the age should be in the same order as in the input array. You have to complete <b>highAge function</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The first line of the input contains an integer N, denoting the number of person in your locality.The second line of the input contains N space-separated integers, denoting the age of persons in your locality.</p>
+        <p><h1>Output Format</h1></br>Return the array containing the age of persons that are over 18(18 included). </p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 100</br>0 ≤ Ai ≤ 100</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>6</br>11 23 3 45 72 68</br>Sample Output</br>23 45 72 68</p>
+        <p>CODE</p>
+        <p>const highAge = (N,Arr) => {</br>let age=18;</br>let a1=[];</br>for(i=0;i<N;i++){</br></N>if(age<=Arr[i]){</br>console.log(Arr[i]);</br>a1=Arr[i];</br>}</br></br>return a1;};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>6</br>Output</br>23 45 72 68</p><hr>
+
+        <p><h1>vii)Increment the Array Elements</h1></br>You are provided an array of integers and you have to increment all array elements by 1 and then print whole array.</br>You have to complete Inc_Arr. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The input contains a single number N, then N array elements as input.</p>
+        <p><h1>Output Format</h1></br>Print the required answer in the function itself.</p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 100</br>1 ≤ ElementoftheArray ≤ 1000</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>5</br>1 2 3 4 5</br>Sample Output</br>2 3 4 5 6</p>
+        <p>CODE</p>
+        <p>const Inc_Arr = (array,N) => {</br>let a2=[];</br>for(i=0;i<N;i++){</br>a2=array[i]+1;</br>console.log(a2);</br>}</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>5</br>1 2 3 4 5</br>Output</br>2 3 4 5 6</p><hr>
+        
+        <p><h1>viii)Pass or Fail</h1></br>You are given an array A containing the maths marks of students in your class, and your task is to determine if all the students pass in your class or not. A student is declared pass if his maths marks are greater than or equal to 32.</br>If all the students pass in your class, return "YES" (without quotes); otherwise, return "NO" (without quotes).</br><b>Note</b>: You have to complete <b>isAllPass function</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The first line of the input contains an integer N, denoting the number of students in your class.</br>The second line of the input contains N space-separated integers, denoting the maths marks of students in your class.</p>
+        <p><h1>Output Format</h1></br>Return "YES" (without quotes) if all the students pass in your class; otherwise, print "NO" (without quotes).</p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 500</br></p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>7</br>13 89 45 98 67 45 54</br>Sample Output</br>NO</p>
+        <p>CODE</p>
+        <p>const isAllPass = (N,Arr) => {</br>let marks=32;</br>for(i=0;i<N;i++){</br>if(Arr[i]===marks){</br>return "YES";</br>}</br>} </br>return "NO";</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>7</br>13 89 45 98 67 45 54</br>Output</br>NO</p><hr>
+
+        <p><h1>ix)Unique Color Shirt</h1></br>Prepbuddy is very tasteful of clothes.</br>He has N numbers of shirts hanging in the hanger in his wardrobe.Prepbuddy likes to wear different colored clothes. So, whenever he see there are two or more shirts with the same color, he removes all the shirt of that color from his wardrobe. Now, he wants to know how many M unique color shirts are left in the wardrobe.</br>Prepbuddy wants you to find M.</br><b>Note</b>: As there are many shades of a color so consider integers as a color name.</br>i.e, color of shirt is 0,1,2, … , N.</p>
+        <p><h1>Input Format</h1></br>The first line of the input contains an integer N denoting the number of shirts in the wardrobe.</br>The second line of the input contains N integers C1,C2,C3,C4,...,CN color of shirts (separated by space).</p>
+        <p><h1>Output Format</h1></br>Return a single integer M denoting the unique colored shirts left in the wardrobe. </p>
+        <p><h1>Constraints</h1></br>1 <= N <= 10^3</br>1 <= C[i] <= 10^3</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Input</br>6</br>3 2 4 1 2 3</br>Output</br>2</p>
+        <p><h1>Sample test case explanation</h1></br>Input: C=3, 2, 4, 1, 2, 3</br>Output: 2</br>There are two 2-color shirts, and two 3-color shirts.</br>So, after removing 2-color and 3-color shirts, the remaining shirts are one 4-color shirt and one 1-color shirt i.e, 4, 1.</br>Hence, the output will be 2. </p>
+        <p>CODE</p>
+        <p>const Unique_Shirts = (arr,N) => {</br>let freq=[];</br>let ans=0;</br>for(i=0;i<1001;i++){</br>freq[i]=0;</br>}</br>for(j=0;j<N;j++){</br>freq[arr[j]]++;</br>}</br>for(k=0;k<1001;k++){</br>if(freq[k]===1){</br>ans++;</br>}</br>}</br>return ans;</br>}</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>6</br>3 2 4 1 2 3</br>Output</br>2</p><hr>
+        
+        <p><h1>x)Min and Max</h1></br>Congratulations on making up to this question. Let us give you a fairly simple array problem to solve. If you know how to iterate through the array, you will easily be able to solve this.</br>The problem statement is simple- given N elements, find the minimum and maximum numbers among those elements.</p>
+        <p><h1>Input Format</h1></br>First-line contains N representing the length of the array.</br>The second line contains N space-separated integers.</p>
+        <p><h1>Output Format</h1></br>Return minimum and maximum elements.</p>
+        <p><h1>Constraints</h1></br>1 <= N < 10^7</br>0 <= A[i] <= 10^7</br></p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Input</br>6</br>3 1 4 6 2 7</br>Output</br>1 7</p>
+        <p><h1>Sample Test Case Explanation</h1></br>In the first test case</br>minimum element = 1 and</br>maximum element = 7</br>In the second test case</br>minimum element = 0 and</br>maximum element = 0</p>
+        <p>CODE</p>
+        <p>function arrayMin(arr) {</br>let min=arr[0];</br>for(i=0;i<arr.length;i++){</br></arr.length>if(arr[i]<min){</br></min>min=arr[i];</br>}</br>}</br>return min;</br>}</br>function arrayMax(arr) {</br>let max=arr[0];</br>for(i=0;i<arr.length;i++){</br>if(arr[i]>max){</br>max=arr[i];</br>}</br>}</br>return max;</br>}</p>
+        <p>OUTPUT</p>
+        <p>Input</br>6</br>3 1 4 6 2 7</br>Output</br>1 7</p><hr>
+
+        <p><h1>xi)Birthday Game</h1></br>Yatharth and Anamika are playing a game. Anamika loves Yatharth very much and she wants to share a chocolate bar with him in which each of the squares consists of an integer represented by A[i].</br>She decides to share a contiguous segment of the chocolate bar selected such that the length of the segment matches Yatharth's birth month M and the sum of the integers on the squares is equal to his birthday D.</br>You must determine how many ways she can divide the chocolate.</p>
+        <p><h1>Input Format</h1></br>The first line consists of an integer N which denotes the number of squares in the chocolate bar.</br>The second line consists of N space-separated integers A[i], consisting of numbers on the chocolate bar squares.</br>The third line contains an integer D and M which denotes Yatharth's birthday and his birth month respectively.     </p>
+        <p><h1>Output Format</h1></br>Print an integer denoting the total number of ways that Anamika can partition her chocolate bar to share with Yatharth.</p>
+        <p><h1>Constraints</h1></br>1 <= N <= 90</br>1 <= A[i] <= 5</br>1 <= D <= 31</br>1 <= M <= 12</p>
+        <p><h1>Example</h1></br>Input</br>5</br>2 2 1 3 2</br>4 2</br>Output</br>2</p>
+        <p><h1>Explanation</h1></br>Anamika wants to find segments summing to Yatharth's birthday, D = 4 with a length matching his birth month, M = 2. In this case, two segments are meeting her criteria: [2,2] and [1,3].</p>
+        <p>CODE</p>
+        <p>function Birthday_Game(arr,D ,M) {</br>let N=arr.length;</br>let count=0;</br>for(i=0;i<N-M+1;i++){</br>let sum=0;</br>for(j=i;j<M+i;j++){</br>sum+=arr[j];</br>}</br>if(sum===D){</br>count++;</br>}</br>}</br>return count;</br>}</p>
+        <p>OUTPUT</p>
+        <p>Input</br>5</br>2 2 1 3 2</br>4 2</br>Output</br>2</p><hr>
+
+        </body>
+
+
+
+
+    </html>
